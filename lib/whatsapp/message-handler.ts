@@ -2,9 +2,8 @@ import { supabase } from '@/lib/supabase/client';
 import {
     sendTextMessage,
     sendButtonMessage,
-    sendListMessage,
     sendLocationMessage,
-} from './client';
+} from './wppconnect-client';
 import { format, parse, addHours, isValid } from 'date-fns';
 import { es } from 'date-fns/locale';
 

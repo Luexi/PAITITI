@@ -13,6 +13,8 @@ import {
     MapPin,
     Ban,
     UserPlus,
+    MessageSquare,
+    MessageCircle,
 } from 'lucide-react';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -43,6 +45,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         { name: 'Reservas', href: '/admin/reservas', icon: Calendar },
         { name: 'Mesas', href: '/admin/mesas', icon: MapPin },
         { name: 'Walk-ins', href: '/admin/walkins', icon: UserPlus },
+        { name: 'Mensajes', href: '/admin/mensajes', icon: MessageSquare },
+        { name: 'WhatsApp', href: '/admin/whatsapp', icon: MessageCircle },
         { name: 'Bloqueos', href: '/admin/bloqueos', icon: Ban },
         { name: 'Configuración', href: '/admin/configuracion', icon: Settings },
     ];
