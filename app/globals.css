@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --ocean-primary: 218 97% 32%;
+    --ocean-light: 199 89% 48%;
+    --ocean-dark: 215 100% 15%;
+    --sand-primary: 37 31% 67%;
+    --sand-light: 43 47% 92%;
+    --coral-primary: 20 95% 49%;
+    --background: 0 0% 100%;
+    --foreground: 215 100% 10%;
+  }
+
+  * {
+    @apply border-ocean-200;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass {
+    @apply backdrop-blur-md bg-white/80 border border-white/20;
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-md bg-ocean-950/80 border border-white/10;
+  }
+
+  .gradient-ocean {
+    background: linear-gradient(135deg, #0369a1 0%, #0c4a6e 100%);
+  }
+
+  .gradient-sand {
+    background: linear-gradient(135deg, #f5f0e1 0%, #c9b88a 100%);
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .shadow-ocean {
+    box-shadow: 0 10px 40px -10px rgba(3, 105, 161, 0.3);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-sand-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-ocean-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-ocean-500;
+}
