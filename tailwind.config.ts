@@ -9,6 +9,9 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
+                // Base colors
+                background: 'hsl(var(--background))',
+                foreground: 'hsl(var(--foreground))',
                 // Paititi del Mar - Oceanic Premium Theme
                 ocean: {
                     50: '#f0f9ff',

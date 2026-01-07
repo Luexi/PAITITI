@@ -13,8 +13,6 @@
     --sand-primary: 37 31% 67%;
     --sand-light: 43 47% 92%;
     --coral-primary: 20 95% 49%;
-    --background: 0 0% 100%;
-    --foreground: 215 100% 10%;
   }
 
   * {
@@ -22,7 +20,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-ocean-950;
     font-family: 'Inter', sans-serif;
   }
 

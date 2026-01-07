@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nImplementar gestión de mesas 2D, walk-ins e integración de mensajería\n\n- Agregar editor visual de mesas con drag & drop\n- Implementar mapa 2D interactivo con estado en tiempo real\n- Crear sistema de walk-ins para clientes sin reserva\n- Integrar webhooks de WhatsApp y Messenger\n- Agregar clientes de mensajería \\(WhatsApp y Facebook Messenger\\)\n- Implementar suscripciones en tiempo real con Supabase\n- Incluir migraciones para tablas de mensajería\n- Actualizar layout admin con navegación a walk-ins\n- Mejorar estilos globales y configuración de Tailwind\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

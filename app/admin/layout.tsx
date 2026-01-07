@@ -12,6 +12,7 @@ import {
     LogOut,
     MapPin,
     Ban,
+    UserPlus,
 } from 'lucide-react';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -41,6 +42,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         { name: 'Dashboard', href: '/admin', icon: LayoutDashboard },
         { name: 'Reservas', href: '/admin/reservas', icon: Calendar },
         { name: 'Mesas', href: '/admin/mesas', icon: MapPin },
+        { name: 'Walk-ins', href: '/admin/walkins', icon: UserPlus },
         { name: 'Bloqueos', href: '/admin/bloqueos', icon: Ban },
         { name: 'Configuración', href: '/admin/configuracion', icon: Settings },
     ];
@@ -73,8 +75,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                                 key={item.href}
                                 href={item.href}
                                 className={`flex items-center px-4 py-3 mb-2 rounded-lg transition-colors ${isActive
-                                        ? 'bg-ocean-700 text-white'
-                                        : 'text-sand-200 hover:bg-ocean-800 hover:text-white'
+                                    ? 'bg-ocean-700 text-white'
+                                    : 'text-sand-200 hover:bg-ocean-800 hover:text-white'
                                     }`}
                             >
                                 <Icon size={20} className="mr-3" />
